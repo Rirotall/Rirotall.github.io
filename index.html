@@ -7,39 +7,93 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+<div class="gif-bg"></div>
+
 <body>
 
-<header>
-  <h1>Hi! I'm Ron Irish Esguerra</h1>
-  <p>Mechatronics Technologist • Embedded Systems • Robotics</p>
+<!-- 🔹 Animated GIF Background -->
+
+<header class="hero">
+  <div class="hero-bg">
+    <!-- Optional: subtle animated tech pattern -->
+    <div class="tech-grid"></div>
+    <div class="tech-particles"></div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1 class="glow">Hi! I'm <span class="highlight">Ron Irish</span> Esguerra</h1>
+      <h2 class="typing">Mechatronics Technologist • Embedded Systems • Robotics</h2>
+      
+      <!-- <div class="nav-link">
+         <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#ojt">OJT</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div> -->
+
+      <nav>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#ojt">OJT</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+    </div>
+
+    <div class="hero-photo-container">
+      <div class="floating-tech">
+        <span class="tech-icon robot">🤖</span>
+        <span class="tech-icon circuit">⚡</span>
+        <span class="tech-icon code">💻</span>
+      </div>
+      <img src="images/profile.gif" alt="Ron Irish Esguerra" class="profile-pic">
+    </div>
+  </div>
 </header>
 
-<nav>
-  <a id = "t-a" href="#about">About</a>
-  <a id = "t-a" href="#skills">Skills</a>
-  <a id = "t-a" href="#projects">Projects</a>
-  <a id = "t-a" href="#ojt">OJT</a>
-  <a id = "t-a" href="#contact">Contact</a>
-</nav>
+
+
+<!-- <nav>
+  <a class="nav-link" href="#about">About</a>
+  <a class="nav-link" href="#skills">Skills</a>
+  <a class="nav-link" href="#projects">Projects</a>
+  <a class="nav-link" href="#ojt">OJT</a>
+  <a class="nav-link" href="#contact">Contact</a>
+</nav> -->
 
 <section id="about">
   <h2>About Me</h2>
   <p>
-    I am a mechatronics technologist with strong hands-on experience in embedded systems,
-    sensors, automation, and robotics. I specialize in Microcontroller and Single Board Computer based systems,
-    integrating hardware and software to solve real-world engineering problems.
+    I am a Mechatronics Technology student with strong hands-on experience in embedded systems,
+    sensors, automation, and robotics. I specialize in microcontroller and single-board computer–
+    based systems, integrating hardware and software to solve real-world engineering problems.
   </p>
 </section>
 
 <section id="skills">
   <h2>Technical Skills</h2>
   <div class="grid">
-    <div class="card"><h3>Embedded Systems</h3><p>ESP32, Arduino, Raspberry Pi</p></div>
-    <div class="card"><h3>Programming</h3><p>C/C++, Arduino Framework, Python</p></div>
-    <div class="card"><h3>Sensors</h3><p>DHT22, BME280, VEML7700, Soil Sensors</p></div>
-    <div class="card"><h3>Communication</h3><p>I2C, SPI, UART, GSM, WiFi</p></div>
-    <div class="card"><h3>Electronics</h3><p>PCB Prototyping, Soldering, Schematics</p></div>
-    <div class="card"><h3>Displays & Data</h3><p>OLED, TFT, SD Card Logging</p></div>
+    <div class="card">
+      <h3>Embedded Systems</h3>
+      <p>ESP's, Arduino, Raspberry Pi</p>
+    </div>
+
+    <div class="card">
+      <h3>Programming</h3>
+      <p>C/C++, Arduino Framework, Python, Linux CLI, Ladder Diagram</p>
+    </div>
+
+    <div class="card">
+      <h3>Design & Editing</h3>
+      <p>SolidWorks, OnShape, AutoCAD, Excel, Word</p>
+    </div>
+
+    <div class="card">
+      <h3>Electronics</h3>
+      <p>PCB Prototyping, Soldering, Schematics, Control Wiring</p>
+    </div>
   </div>
 </section>
 
@@ -49,60 +103,62 @@
 
     <div class="card">
       <h3>ESP32 Rain Prediction System</h3>
-      <p>
-        Multi-sensor system estimating rain probability with confidence level (0–100%)
-        and OLED display.
-      </p>
+      <p>Multi-sensor system estimating rain probability (0–100%) with OLED display.</p>
       <div class="video-wrapper">
-      <img src="images/Weather.jpg" alt="Rain Prediction System" class="project-img">
+        <img src="images/Weather.jpg" alt="ESP32 Rain Prediction System" class="project-img">
       </div>
     </div>
 
     <div class="card">
       <h3>Precise Landing Drone</h3>
-      <p>
-        Autonomous drone using ArduPilot and APM 2.8 capable of precision navigation
-        and landing using AprilTags.
-      </p>
-        <div class="video-wrapper">
+      <p>Autonomous drone using Raspberry Pi and APM 2.8 for precision navigation and AprilTag landing.</p>
+      <div class="video-wrapper">
         <video controls>
-            <source src="videos/Drone.mp4" type="video/mp4">
-            Your browser does not support video.
+          <source src="videos/Drone.mp4" type="video/mp4">
         </video>
-        </div>
+      </div>
     </div>
 
     <div class="card">
       <h3>Visual Tunnel Oven Monitoring</h3>
-      <p>
-        A visual monitoring system that assists operators in load navigation,
-        time prediction, and real-time oven status visualization.
-      </p>
-
-        <div class="video-wrapper">
+      <p>System for load navigation, time prediction, and real-time oven status visualization.</p>
+      <div class="video-wrapper">
         <video controls>
-            <source src="videos/Oven.mp4" type="video/mp4">
-            Your browser does not support video.
+          <source src="videos/Oven.mp4" type="video/mp4">
         </video>
-        </div>
-        
+      </div>
     </div>
 
     <div class="card">
       <h3>IoT Library Inventory</h3>
-      <p>
-        Power by ESP32 with QR Code scanner and RFID, the library inventery will be stored in 
-        googlesheet for easy status identification of the librarian.
-      </p>
+      <p>ESP32-based system using QR and RFID, with Google Sheets integration.</p>
+      <img src="images/Library.jpg" alt="IoT Library Inventory" class="project-img">
     </div>
 
     <div class="card">
       <h3>Computer Vision-Based Traffic Light</h3>
-      <p>
-        Traffic light system using computer vision to manage priority in blind-spot
-        road intersections in the Philippines.
-      </p>
-        <img src="images/Traffic2.jpeg" alt="Rain Prediction System" class="project-img">
+      <p>Vision-based traffic control for blind-spot intersections in the Philippines.</p>
+      <img src="images/Traffic2.jpeg" alt="Vision Traffic Light System" class="project-img">
+    </div>
+
+    <div class="card">
+      <h3>Line Follower Robot</h3>
+      <p>Competition robot using closed-loop feedback for dynamic line tracking.</p>
+      <div class="video-wrapper">
+        <video controls>
+          <source src="videos/Line.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Trashbin Segregation System</h3>
+      <p>Automated trash segregation system featured by Philippine Star on Facebook.</p>
+      <div class="video-wrapper">
+        <video controls>
+          <source src="videos/Trashbin.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
 
   </div>
@@ -114,9 +170,8 @@
     <h3>Microchip Technology Operations (Philippines)</h3>
     <p><strong>Duration:</strong> 540 Hours (Sept – Dec 2025)</p>
     <p>
-      Equipment Engineering Intern focused on machine automation, hardware and control
-      system modifications, and improvement of data integrity, system reliability,
-      and preventive maintenance processes.
+      Equipment Engineering Intern focused on machine automation, control system modifications,
+      data integrity improvement, and preventive maintenance optimization.
     </p>
   </div>
 </section>
@@ -133,6 +188,5 @@
 </footer>
 
 <script src="js/main.js"></script>
-
 </body>
 </html>
